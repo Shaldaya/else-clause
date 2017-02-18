@@ -1,0 +1,46 @@
+using UnityEngine;
+using System.Collections;
+
+public class ElseClause : MonoBehaviour {
+
+	void Start () {
+	
+		int cerealPieces = 100;
+		int age = 20;
+		bool songGood = true;
+		int exampleFour = 123;
+		int exampleFive = 678;
+
+		//if else statement to determine if there is enough cereal left to have a bowl			
+		if (cerealPieces >= 50){
+			Debug.Log ("You have enough cereal for a bowl");
+		}
+			else Debug.Log ("You're out of cereal");
+
+		//Website that only allows users of a certain age group
+		if (age <= 25) {
+			Debug.Log ("Sorry, youre to young to enter!");
+		} else if (age >= 45) {
+			Debug.Log ("Sorry, youre too old to enter!");
+		} else {
+			Debug.Log ("Welcome!");
+		}
+
+		 //Display opinion of a song
+		if (songGood == true){
+		Debug.Log ("This is a good song");
+		}
+		else Debug.Log ("This song isnt good");
+
+		//etc.
+		if (exampleFour == 234){
+			Debug.Log ("Do a thing");
+		}
+		else Debug.Log ("Do another thing");
+
+		if (exampleFive == 234){
+			Debug.Log ("Do a thing");
+		}
+		else Debug.Log ("Do another thing");
+	}
+}
